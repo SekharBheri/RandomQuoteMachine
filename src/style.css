@@ -1,0 +1,180 @@
+#quote-box {
+  /* center on screen */
+  position: fixed;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  
+
+  #app {
+  }
+
+  #quote-box {
+    /* center on screen */
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+    margin: auto;
+
+    /* look and feel */
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    
+
+    /* behaviour */
+    display: grid;
+    grid-template-rows: 6fr 2fr 1fr;
+  }
+
+  blockquote {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+   
+  }
+
+  blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -5px;
+    top: -20px;
+    
+  }
+
+  blockquote cite {
+   
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  blockquote cite:before {
+    content: "\2014 \2009";
+  }
+
+  #action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  button {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    outline: none;
+  }
+
+  
+ a.button {
+    appearance: button;
+
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 3em;
+    cursor: pointer;
+    background-color: #6b5b95;
+    color: white;
+  }
+
+  a.button:hover {
+    color: #6b5b95;
+    background-color: white;
+  }
+
+  
+  
+  margin: auto;
+/* look and feel */
+  width: 45%;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+
+  /* behaviour */
+  display: grid;
+  grid-template-rows: auto auto 5px;
+}
+
+/* blockquote text */
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  font-weight:bold;
+  
+  
+}
+
+ /* block quote */
+blockquote:before {
+  display: block;
+  padding-left: 16px;
+  content:"\201C";
+  font-size: 40px;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  content: open-quote;
+}
+/* author */
+blockquote cite {
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  float:right;
+  
+}
+
+#action {
+  display: flex;
+  float:right;
+   flex-direction: initial;
+  justify-content: space-around;
+}
+
+/* new quote button */
+button {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #6b5b95;
+  border: none;
+  color: white;
+  outline: none;
+  float:right;
+  
+}
+
+a.button {
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+  float:left;
+}
