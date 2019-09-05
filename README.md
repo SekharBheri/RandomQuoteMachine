@@ -1,4 +1,4 @@
 # RandomQuoteMachine
-Display Random Quotes using React
+##Display Random Quotes using React
 
-Demo : https://codepen.io/sekharBheri/pen/aboVMKO
+######Demo : [Random Quote Machine](https://codepen.io/sekharBheri/pen/aboVMKO)
